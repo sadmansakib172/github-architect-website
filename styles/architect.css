@@ -5,13 +5,14 @@
 * {
     font-family: 'Work Sans', sans-serif;
 }
-.btn-primary{
+
+.btn-primary {
     border-radius: 8px;
     background: #FF900E;
-    padding:20px 25px;
-    color:white;
+    padding: 20px 25px;
+    color: white;
     font-size: 1.25rem;
-    font-weight: 600; 
+    font-weight: 600;
     border: 0;
     cursor: pointer;
 }
@@ -50,41 +51,94 @@ nav li a {
 }
 
 /* banner styles  */
-.banner-content{
-  max-width: 800px;
-  text-align: center;
-  margin:0 auto;
+.banner-content {
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
 }
-.banner-title{
+
+.banner-title {
     font-size: 4rem;
     font-weight: 700;
-    color:#131313;
+    color: #131313;
 }
-.banner-description{
-    color: #727272; 
+
+.banner-description {
+    color: #727272;
 }
-.banner img{
+
+.banner img {
     margin-top: 20px;
     width: 100%;
 }
 
 /* responsive styles  */
 /* mobile devices or small devices  */
-@media screen and (max-width: 575px){
-   header{
-    padding:20px;
-   } 
-   nav{
-    flex-direction: column;
-   }
+@media screen and (max-width: 575px) {
+    header {
+        padding: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
 }
 
 /* tablet or medium devices  */
-@media screen and (min-width: 576px) and (max-width: 960px){
-    nav{
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    nav {
         flex-direction: column;
     }
-    header{
-        padding:50px;
+
+    header {
+        padding: 50px;
     }
+}
+
+/* main section styles  */
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.teams-container {
+    display: flex;
+    align-items: center;
+    margin-top:5rem;
+
+}
+
+.teams-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.teams-title {
+    font-size: 2.8rem;
+}
+
+.teams-content {
+    margin-right: 70px;
+    margin-left: 70px;
+}
+
+.teams-title .quick-list {
+    color: #727272;
+    font-weight: 500;
+}
+
+.teams-title .text-features {
+    color: #FF900E;
+    font-weight: 700;
+}
+
+.teams-title .of-our {
+    color: #131313;
+    font-weight: 700;
+}
+
+.teams-description {
+    color:#727272;
+
 }
